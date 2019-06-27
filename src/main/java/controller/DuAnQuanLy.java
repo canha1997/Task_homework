@@ -1,7 +1,8 @@
 package controller;
 
-public class DuAn implements iDuAn{
+public class DuAnQuanLy implements iDuAn{
     Controller controller=new Controller();
+
     @Override
     public void nhapDuAn() {
         controller.nhapDuAn();

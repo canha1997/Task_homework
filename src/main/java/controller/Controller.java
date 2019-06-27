@@ -13,7 +13,6 @@ public class Controller {
     Scanner scanner=new Scanner(System.in);
     ArrayList<NhanVien> nhanvienList = new ArrayList<>();
 
-
     public void nhapNhanVien() {
         NhanVien nhanvien=new NhanVien();
         Task task= new Task();
@@ -64,7 +63,7 @@ public class Controller {
 
 
     public void themNhanVien() {
-        nhapNhanVien();
+
 
     }
 
@@ -72,9 +71,6 @@ public class Controller {
     public void xoaNhanVien() {
 
     }
-
-
-
 
     ///////DU AN///////////////////
 
@@ -187,6 +183,10 @@ public class Controller {
 ////////// TASK////////////////////
 
 public void nhapTask() {
+        if(nhanvienList.size()==0)
+        {
+            System.out.println("an loz");
+        }
     Task task= new Task();
     int k=0;
     Scanner scanner=new Scanner(System.in);
@@ -198,6 +198,7 @@ public void nhapTask() {
     String idTest=scanner.nextLine();
     while (true) {
         for (NhanVien nhanv : nhanvienList) {
+            System.out.println(nhanv.getID());
             if (idTest.equals(nhanv.getID())) {
                 k=1;
                 task.setIDtask(idTest);
@@ -210,7 +211,8 @@ public void nhapTask() {
         }
         else
             System.out.println("Ma Id cua nhan vien khong ton tai");
-        continue;
+
+
     }
     System.out.println("Nhap tinh trang task");
     task.setTinhTrangTask(scanner.nextLine());

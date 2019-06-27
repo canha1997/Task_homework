@@ -1,7 +1,10 @@
 package controller;
 
-public class NhanVien implements iNhanVien {
+import java.util.ArrayList;
+
+public class NhanVienQuanly implements iNhanVien {
     Controller controller=new Controller();
+
     @Override
     public void nhapNhanVien() {
         controller.nhapNhanVien();

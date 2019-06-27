@@ -5,8 +5,7 @@ import java.util.Scanner;
 public class App {
     public static void main(String[] args)
     {
-        DuAn duAn=new DuAn();
-        Task task=new Task();
+
         int testNhapNhanVien=0;
         while (true) {
             int x=0;
@@ -34,7 +33,7 @@ public class App {
     }
     public static void nhanVien()
     {
-        NhanVien quanlyNhanVien=new NhanVien();
+        NhanVienQuanly quanlyNhanVien=new NhanVienQuanly();
         Scanner sc = new Scanner(System.in);
         while(true)
         {
@@ -60,7 +59,7 @@ public class App {
     }
    public static void duAn()
     {
-        DuAn quanlyDuAn=new DuAn();
+        DuAnQuanLy quanlyDuAn=new DuAnQuanLy();
         Scanner sc = new Scanner(System.in);
         int k;
         while (true) {
@@ -91,6 +90,8 @@ public class App {
     }
     public static void Task()
     {
-
+        Task task=new Task();
+        System.out.println("#### QUAN LY STARK########");
+        task.nhapTask();
     }
 }
