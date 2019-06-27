@@ -4,9 +4,9 @@ public class Task {
     private String IDtask;
     private String taskTitle;
     private String tinhTrangTask;
-    private String status;
     private String taskNhanVien;
     private String taskDuAn;
+    private String taskDeadline;
 
     public String getIDtask() {
         return IDtask;
@@ -16,20 +16,20 @@ public class Task {
         this.IDtask = IDtask;
     }
 
+    public String getTaskTitle() {
+        return taskTitle;
+    }
+
+    public void setTaskTitle(String taskTitle) {
+        this.taskTitle = taskTitle;
+    }
+
     public String getTinhTrangTask() {
         return tinhTrangTask;
     }
 
     public void setTinhTrangTask(String tinhTrangTask) {
         this.tinhTrangTask = tinhTrangTask;
-    }
-
-    public String getStatus() {
-        return status;
-    }
-
-    public void setStatus(String status) {
-        this.status = status;
     }
 
     public String getTaskNhanVien() {
@@ -48,11 +48,11 @@ public class Task {
         this.taskDuAn = taskDuAn;
     }
 
-    public String getTaskTitle() {
-        return taskTitle;
+    public String getTaskDeadline() {
+        return taskDeadline;
     }
 
-    public void setTaskTitle(String taskTitle) {
-        this.taskTitle = taskTitle;
+    public void setTaskDeadline(String taskDeadline) {
+        this.taskDeadline = taskDeadline;
     }
 }
